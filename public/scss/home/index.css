@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-@font-face {
-  font-family: "deluxes";
-  src: url(../fonts/DeluxesBold-8MzWg.ttf);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -640,6 +635,10 @@ ul {
     bottom: 10px;
     right: 10px;
     margin-right: 0 !important;
+  }
+  .all-grid-img-container {
+    padding: 3px 3px 0 3px !important;
+    gap: 3px 3px !important;
   }
 }
 
