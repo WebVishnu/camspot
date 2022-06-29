@@ -432,7 +432,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #04B0BC;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -448,13 +448,12 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
+    color: #36edfa;
     padding-left: 8px;
 }
 
@@ -474,6 +473,87 @@ ul {
 .footer-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
+}
+
+//Contact form
+.query-form-text-div {
+    position: relative;
+    width: 22vw;
+}
+
+.query-form-text-div h1,
+.query-form-text-div h3 {
+    line-height: 27px;
+    color: white;
+}
+
+.query-form-btn-div {
+    position: relative;
+    width: 25vw;
+}
+
+.query-form-btn {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #00CAD8;
+    color: white;
+    border-radius: 6px;
+    font-size: calc(.5vw + 10px);
+    font-weight: 700;
+    padding: 10px 30px;
+    transition: all .2s ease-in;
+}
+
+.query-form-btn:hover {
+    background-color: #25c0cb!important;
+}
+
+.input-field {
+    position: relative;
+    right: 1rem;
+    width: 25vw;
+    height: 24px;
+    line-height: 44px;
+    margin-bottom: 6vh;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    padding: 3px 0px;
+    outline: 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    background-color: transparent;
+    color: #111;
+}
+
+input:invalid {
+    outline: 0;
+    // color: #ff2300;
+    //   border-color: #ff2300;
+}
+
+input:focus,
+input:valid {
+    border-color: #00CAD8;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 14px;
+    top: -24px;
+    color: #00CAD8;
 }
 
 

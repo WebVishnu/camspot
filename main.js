@@ -31,6 +31,24 @@ app.use(express.static(staticPath))
 app.get('/', (req, res) => {
     res.render('index/index')
 })
+app.get('/sign-up', (req, res) => {
+    res.render('sign-up/sign-up')
+})
+app.get('/sign-in', (req, res) => {
+    res.render('sign-in/sign-in')
+})
+app.get('/search-results', (req, res) => {
+    res.render('search-results/search-results')
+})
+app.get('/upload-profile-picture', (req, res) => {
+    res.render('upload-profile-picture/upload-profile-picture')
+})
+app.get('/requests', (req, res) => {
+    res.render('manage-requests/requests')
+})
+app.get('/checkout', (req, res) => {
+    res.render('checkout/checkout')
+})
 
 
 app.listen(port, () => {
